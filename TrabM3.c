@@ -135,7 +135,6 @@ void *server_thread(void *arg) {
             pthread_mutex_unlock(&queue_mutex);
 
             if (!j) {
-                // nada para fazer neste período
                 break;
             }
 
@@ -259,4 +258,5 @@ int main(void) {
     printf("Encerrando (para exemplo simples vamos apenas sair do processo).\n");
     // Em código real você sinalizaria as threads para sair, etc.
     return 0;
+
 }
