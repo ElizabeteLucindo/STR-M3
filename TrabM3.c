@@ -99,7 +99,7 @@ void sort_job(void *arg) {
     clock_gettime(CLOCK_MONOTONIC, &ts_start);
     long long t_start_us = ts_start.tv_sec * 1000000LL + ts_start.tv_nsec / 1000;
 
-    // WCET 5 ms equivalente ao ESP32
+    // WCET 5 ms
     busy_5ms();
     
     clock_gettime(CLOCK_MONOTONIC, &ts_end);
@@ -260,3 +260,4 @@ int main(void) {
     return 0;
 
 }
+
